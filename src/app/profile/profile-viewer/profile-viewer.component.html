@@ -1,1 +1,5 @@
-<p>profile-viewer works!</p>
+<h1>Users Data </h1>
+<tr *ngFor="let row of userData">
+    <td>{{row.name}} {{row.email}}</td>
+    <button (click)="deleteButton()">remove</button>
+</tr>

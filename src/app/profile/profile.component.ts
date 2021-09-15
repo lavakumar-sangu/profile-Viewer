@@ -7,8 +7,9 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
+  userData = {};
   constructor() { }
-  
+
   ngOnInit(): void {
   }
   public name: any;
@@ -18,9 +19,5 @@ export class ProfileComponent implements OnInit {
     this.rows.push( {name: this.name, email: this.email} );
     this.name = null;
     this.email = null;
-  }
-  deleteButton() {
-    this.rows.length;
-    this.rows.pop()
   }
 }

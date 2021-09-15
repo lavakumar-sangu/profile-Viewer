@@ -8,7 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Profile-list';
-  rows: any;
-  userName: any;
-  userEmail: any;
+
 }
