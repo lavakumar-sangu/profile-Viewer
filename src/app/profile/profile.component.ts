@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 
 @Component({
@@ -8,16 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
   constructor() { }
-
+  
   ngOnInit(): void {
   }
   public name: any;
   public email: any;
   public rows: Array<{name: string, email: string}> = [];
-
   buttonClicked() {
     this.rows.push( {name: this.name, email: this.email} );
     this.name = null;
     this.email = null;
+  }
+  deleteButton() {
+    this.rows.length;
+    this.rows.pop()
   }
 }

@@ -1,8 +1,9 @@
 <div class="container styling">
     Name : <input type="text" [(ngModel)]="name" placeholder="Enter Name"><br><br> Email :<input type="text" [(ngModel)]="email" placeholder="Enter Email"> <br><br>
-    <button (click)="buttonClicked()">Click to Insert New Row</button>
+    <button (click)="buttonClicked()">Add</button>
     <tr *ngFor="let row of rows">
         <td>{{row.name}}</td>
         <td>{{row.email}}</td>
+        <button (click)="deleteButton()">remove</button>
     </tr>
     <div>
